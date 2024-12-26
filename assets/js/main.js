@@ -174,7 +174,7 @@
 
   /**
    * Porfolio isotope and filter
-   */
+   
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
@@ -201,6 +201,46 @@
     }
 
   });
+*/
+
+window.addEventListener('load', () => {
+  let portfolioContainer = select('.portfolio-container');
+  if (portfolioContainer) {
+    let portfolioIsotope = new Isotope(portfolioContainer, {
+      itemSelector: '.portfolio-item'
+    });
+
+    let portfolioFilters = select('#portfolio-flters li', true);
+
+    // Automatically activate filter-1 on page load
+    portfolioFilters.forEach(function(el) {
+      el.classList.remove('filter-active');
+    });
+    let filter1 = document.querySelector('[data-filter=".filter-1"]');
+    if (filter1) {
+      filter1.classList.add('filter-active');
+      portfolioIsotope.arrange({
+        filter: filter1.getAttribute('data-filter')
+      });
+    }
+
+    on('click', '#portfolio-flters li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+  }
+});
+
 
   /**
    * Initiate portfolio lightbox 

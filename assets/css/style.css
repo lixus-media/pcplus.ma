@@ -2154,8 +2154,9 @@ section {
   color: #fff;
 }
 
-.portfolio #portfolio-flters li.filter-active{
+.portfolio #portfolio-flters li.filter-active .btn-portfolio{
   color: #fff;
+  background: #cc1616;
 }
 
 .portfolio #portfolio-flters li:last-child {
