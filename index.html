@@ -29,11 +29,53 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <script 
     src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"  data-widget-id="676c80851f70dc6f61fac94f"  > 
   </script>
  
   <style>
+/*Clients*/
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*background-color: #f2f2f2;  Change as needed */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.slick-prev {
+  left: -0px;
+}
+
+.slick-next {
+  right: 10px;
+}
+/*End Clients*/
+/*Partenaria*/
+.border-div{
+      border: 1px solid rgb(65, 65, 65);
+      padding: 10px;
+    }
+/* End Partenaria*/
+    /*footer*/
+.witr_sub_table {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffffff8c;
+    margin-bottom: 8px;
+}
+/* End footer*/
+/*Numbers*/
     .counter-item {
     position: relative;
     text-align: center;
@@ -46,11 +88,13 @@
           font-size: 2.5rem;
           font-weight: bold;
       }
-      .icon-num i {
+      .icon-num span {
         color: #ed5b5b;
     font-size: 40px;
     padding-top: 40px;
 }
+
+/* End Numbers*/
 .fun-facts {
     background: url(assets/img/hero-bg1\ \(3\).jpg);
     background-attachment: fixed;
@@ -110,15 +154,15 @@
             <ul>
               <li><a class="nav-link scrollto" href="#about">Qui sommes-nous</a></li>
               <li><a class="nav-link scrollto" href="#marques">Nos Partenaires</a></li>
+              <li><a class="nav-link scrollto" href="#why-us">Nos Valeurs</a></li>
               <li><a class="nav-link scrollto" href="#clients">Nos Clients</a></li>
-              <li><a class="nav-link scrollto" href="#team">Nos Equipe</a></li>
+              <!--<li><a class="nav-link scrollto" href="#team">Nos Equipe</a></li>-->
             </ul>
           </li>
           <li><a class="nav-link scrollto " href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#why-us">Valeurs</a></li>
-          <li><a class="nav-link scrollto" href="#certif">Certifications</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Nos Projets</a></li>
-          <li><a class="nav-link scrollto" href="#news">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#certif">Certifications</a></li>
+          <!--<li><a class="nav-link scrollto" href="#news">Blog</a></li>-->
 		      <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -173,44 +217,47 @@
     <!-- ======= Numbers Section ======= -->
     <section id="numbers" class="fun-facts">
       <div class="container">
+        <div class="section-title">
+          <span>Pc Plus en chiffres</span>
+        </div>
         <div class="row text-center" style="padding: 30px 0px;">
             <div class="col-md-3">
                 <div class="counter-item">
                   <div class="icon-num">
-                    <i>+20</i>
+                    <span>+20</span>
                   </div>
                   <div class="card-body">
-                      <p class="text-light">Happy Customers</p>
+                      <p class="text-light">ans d'expérience</p>
                   </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="counter-item">
                   <div class="icon-num">
-                    <i>+100M</i>
+                    <span>+100M</span>
                   </div>
                     <div class="card-body">
-                        <p class="text-light">Finished Projects</p>
+                        <p class="text-light">De chiffre d'affaires</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="counter-item">
                   <div class="icon-num">
-                    <i>+2</i>
+                    <span>+2</span>
                   </div>
                     <div class="card-body">
-                        <p class="text-light">Issues Solved</p>
+                        <p class="text-light">Agences</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="counter-item">
                   <div class="icon-num">
-                    <i>+70</i>
+                    <span>+70</span>
                   </div>
                     <div class="card-body">
-                        <p class="text-light">Awards Won</p>
+                        <p class="text-light">Experts techniques</p>
                     </div>
                 </div>
             </div>
@@ -292,65 +339,65 @@
 	</section>
 	
     <!-- ======= Clients Section ======= -->
-    <section id="marques" class="clients">
+    <section id="marques" class="marques">
       <div class="container" data-aos="zoom-in">
 
 
         <div class="section-title">
-          <span>Partenaires</span>
+          <!--<span>Partenaires</span>-->
           <h2>Nos Partenaires</h2>         
         </div>
 		
         <div class="row d-flex align-items-center">
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-apc-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-canon-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-cisco-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-dell-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-eaton-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-epson-1.png" class="img-fluid" alt="">
           </div>
 
         </div>
         <div class="row d-flex align-items-center">
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-hp-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-kasspersky-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-lenovo-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-microsoft-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-poly-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-xerox-1.png" class="img-fluid" alt="">
           </div>
 
@@ -365,11 +412,11 @@
             <img src="assets/img/marques/" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-zebra-1.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-6 border-div">
             <img src="assets/img/marques/logos-400p-jabra-1.png" class="img-fluid" alt="">
           </div>
 
@@ -440,14 +487,11 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
-
         <div class="section-title">
           <span>Clients</span>
           <h2>Nos Clients</h2>
         </div>
-		
-        <div class="row d-flex align-items-center">
-
+        <div class="row d-flex align-items-center slider">
           <div class="col-lg-2 col-md-4 col-6">
             <img src="assets/img/customers/alten-400p-1.png" class="img-fluid" alt="">
           </div>
@@ -472,9 +516,6 @@
             <img src="assets/img/customers/lesaffre-400p.png" class="img-fluid" alt="">
           </div>
 
-        </div>
-        <div class="row d-flex align-items-center">
-
           <div class="col-lg-2 col-md-4 col-6">
             <img src="assets/img/customers/m1-400p.png" class="img-fluid" alt="">
           </div>
@@ -498,10 +539,9 @@
           <div class="col-lg-2 col-md-4 col-6">
             <img src="assets/img/customers/tanger-med-400p.png" class="img-fluid" alt="">
           </div>
-
-        </div>	       
-
-      </div>
+    </div>
+    <button class="slick-prev">Previous</button> 
+    <button class="slick-next">Next</button>
     </section><!-- End Clients Section -->
 	
 	
@@ -888,15 +928,18 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 footer-links">
             <div class="footer-info">
-              <h3>Day</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
+              <h3>Tanger</h3>
+              <ul>
+                <li><i class="bx bx-map"></i> <a href="#">  Rce, Palace 8, Rue Al Farabi Entresol N° 6 B</a></li>
+                <li><i class="bx bx-phone-call"></i> <a href="#clients"><strong>Phone: </strong> (+212) 05 35 65 16 22</a></li>
+              </ul><br>
+              <h3>Fès</h3>
+              <ul>
+                <li><i class="bx bx-map"></i> <a href="#">  3, Rue Abi hayane Taouhidi Av. des F.A.R (V.N)</a></li>
+                <li><i class="bx bx-phone-call"></i> <a href="#clients"><strong>Phone: </strong> (+212) 05 39 32 39 12</a></li>
+              </ul>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -905,37 +948,60 @@
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
+
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Accueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Qui sommes-nous</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#marques">Marques</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#certif">Certifications</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Nos Projets</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#clients">Nos Clients</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Infrastructure</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Postes de travail et laptops</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Périphériques et consommables</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Infrastructure</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
+          <div class="col-lg-4 col-md-6 ">
+            <div class="">
+              <div class="witr_table" style="padding-right: 10px;">
+                <h4>Horraire</h4>
+								<div class="witr_sub_table">
+									<span>Tuesday - Friday</span>
+									<span>08:00 - 20:00</span>
+								</div>
+								<div class="witr_sub_table">	
+									<span>Saturday</span>
+									<span>09:00 - 18:00</span>
+								</div>		
+								<div class="witr_sub_table">		
+									<span>Sunday</span>
+									<span>09:00 - 18:00</span>
+								</div>
+								<div class="witr_sub_table">		
+									<span>Monday</span>
+									<span>09:00 - 18:00</span>
+								</div>
+								<div class="witr_sub_table">		
+									<span>Emergency:</span>
+									<span> (+099) 020 768 69</span>
+								</div>
+							</div>
+            </div>
           </div>
 
         </div>
@@ -959,7 +1025,44 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
-  <script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
     
     document.addEventListener('DOMContentLoaded', () => {
             const counters = document.querySelectorAll('.counter');
