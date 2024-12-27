@@ -2190,6 +2190,6 @@ section {
 
 
 .slick-next:before, .slick-prev:before {
-  font-size: 35px;
-  color: #ad1010;
+  font-size: 35px !important;
+  color: #ad1010 !important;
 }
