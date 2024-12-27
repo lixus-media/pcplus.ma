@@ -2186,3 +2186,10 @@ section {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
+
+
+
+.slick-next:before, .slick-prev:before {
+  font-size: 35px;
+  color: #ad1010;
+}
