@@ -2200,6 +2200,7 @@ section {
 
 .slick-next {
   top: 70% !important;
+  right: 30px !important
 }
 
 slick-slider {
