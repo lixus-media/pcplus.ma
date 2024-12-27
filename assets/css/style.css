@@ -669,7 +669,7 @@ section {
 }
 
 .clients img {
-  width: 65%;
+  width: 55%;
   /*filter: grayscale(100);*/
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -2192,4 +2192,13 @@ section {
 .slick-next:before, .slick-prev:before {
   font-size: 35px !important;
   color: #ad1010 !important;
+  top : 70% !important
+}
+
+.slick-prev {
+  left : -50px !important;
+}
+
+.slick-next {
+  left : 50px !important;
 }
