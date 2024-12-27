@@ -2195,12 +2195,10 @@ section {
 }
 
 .slick-prev {
-  left : -50px !important;
   top: 70% !important;
 }
 
 .slick-next {
-  right: 20px !important;
   top: 70% !important;
 }
 
