@@ -2192,13 +2192,14 @@ section {
 .slick-next:before, .slick-prev:before {
   font-size: 35px !important;
   color: #ad1010 !important;
-  top : 70% !important;
 }
 
 .slick-prev {
   left : -50px !important;
+  top: 70% !important;
 }
 
 .slick-next {
   right: 20px !important;
+  top: 70% !important;
 }
