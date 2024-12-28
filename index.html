@@ -112,6 +112,149 @@
     display: inline-block;
     margin-bottom: 10px;
 }
+
+
+ /*Whatssap icon*/
+
+ .fixed-icons {
+
+position: fixed;
+
+bottom: 100px;
+
+right: 0px;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 10px;
+
+border: #ed5b5b;
+
+}
+
+
+
+.icon-container {
+
+display: flex;
+
+align-items: center;
+
+}
+
+
+
+.icon {
+
+border: solid 1px;
+
+border-right: 0px;
+
+display: flex;
+
+align-items: center;
+
+width: auto;
+
+height: 50px;
+
+padding: 5px;
+
+/*background-color: rgba(101, 101, 101, 0.1);*/
+
+border-radius: 25px 0px 0px 25px;
+
+transition: background-color 0.3s, box-shadow 0.3s;
+
+text-decoration: none;
+
+color: inherit;
+
+}
+
+.whatsapp{
+
+color: rgba(65 195 82);
+
+}
+
+
+
+.email{
+
+color: rgba(103 58 183);
+
+}
+
+
+
+.icon i {
+
+font-size: 30px;
+
+margin-right: 10px;
+
+}
+
+
+
+.icon-title-email {
+
+display: none;
+
+color: #fff;
+
+font-size: 16px;
+
+}
+
+.icon-title-whatsapp {
+
+display: none;
+
+color: #fff;
+
+font-size: 16px;
+
+}
+
+
+
+.whatsapp:hover {
+
+color: #fff;
+
+background-color: rgba(65 195 82);
+
+box-shadow: 0 4px 8px rgba(65 195 82);
+
+}
+
+.email:hover {
+
+color: #fff;
+
+background-color: rgba(103 58 183);
+
+box-shadow: 0 4px 8px rgba(103 58 183);
+
+}
+
+
+
+.whatsapp:hover .icon-title-whatsapp {
+
+display: inline;
+
+}
+
+.email:hover .icon-title-email {
+
+display: inline;
+
+}
   </style>
 
   <!-- =======================================================
@@ -151,7 +294,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Societé</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#about"><span>Societé</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#about">Qui sommes-nous</a></li>
               <li><a class="nav-link scrollto" href="#marques">Nos Partenaires</a></li>
@@ -161,7 +304,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto " href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Nos Projets</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Projets</a></li>
           <li><a class="nav-link scrollto" href="#certif">Certifications</a></li>
           <!--<li><a class="nav-link scrollto" href="#news">Blog</a></li>-->
 		      <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
@@ -177,7 +320,7 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <h1>Leader en technologies d'information</h1>
       <h2>Votre partenaire pour la croissance de votre entreprise.</h2>
-      <a href="#services" class="btn-get-started scrollto">Nos Services</a>
+      <a href="#services" class="btn-get-started scrollto">Services</a>
     </div>
   </section><!-- End Hero -->
 
@@ -307,7 +450,7 @@
 
         <div class="section-title">
           <span>Services</span>
-          <h2>Nos Services</h2>
+          <h2>Services</h2>
           <p>Nos services et produits couvre tous vos besoins technologique pour bouster votre productivité, tels que les laptops, les postes de travails, l’infrastructure réseau & wifi & serveur, le stockage, la sauvegarde des données, l’impression et la vidéo surveillance, plus que les outils de collaboration.</p>
         </div>
 
@@ -586,7 +729,7 @@
 
         <div class="section-title">
           <span>Projets</span>
-          <h2>Nos Projets</h2>
+          <h2>Projets</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -955,6 +1098,35 @@
 
   </main><!-- End #main -->
 
+<!-- Whatssapp and Email -->
+
+<div class="fixed-icons">
+
+  <div class="icon-container">
+
+    <a href="https://wa.me/yourwhatsappnumber" class="icon whatsapp">
+
+      <i class="bi bi-whatsapp"></i>
+
+      <div class="icon-title-whatsapp">05 15 02 10 12</div>
+
+    </a>
+
+  </div>
+
+  <div class="icon-container">
+
+    <a href="mailto:youremail@example.com" class="icon email">
+
+      <i class="bi bi-envelope"></i>
+
+      <div class="icon-title-email">05 15 02 10 12</div>
+
+    </a>
+
+  </div>
+
+</div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -994,7 +1166,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#marques">Marques</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#certif">Certifications</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Nos Projets</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Projets</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#clients">Nos Clients</a></li>
             </ul>
           </div>
@@ -1153,3 +1325,9 @@ $(document).ready(function() {
 </body>
 
 </html>
+
+
+
+
+
+
