@@ -277,6 +277,149 @@
     display: inline-block;
     margin-bottom: 10px;
 }
+
+
+ /*Whatssap icon*/
+
+ .fixed-icons {
+
+position: fixed;
+
+bottom: 100px;
+
+right: 0px;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 10px;
+
+border: #ed5b5b;
+
+}
+
+
+
+.icon-container {
+
+display: flex;
+
+align-items: center;
+
+}
+
+
+
+.icon {
+
+border: solid 1px;
+
+border-right: 0px;
+
+display: flex;
+
+align-items: center;
+
+width: auto;
+
+height: 50px;
+
+padding: 5px;
+
+/*background-color: rgba(101, 101, 101, 0.1);*/
+
+border-radius: 25px 0px 0px 25px;
+
+transition: background-color 0.3s, box-shadow 0.3s;
+
+text-decoration: none;
+
+color: inherit;
+
+}
+
+.whatsapp{
+
+color: rgba(65 195 82);
+
+}
+
+
+
+.email{
+
+color: rgba(103 58 183);
+
+}
+
+
+
+.icon i {
+
+font-size: 30px;
+
+margin-right: 10px;
+
+}
+
+
+
+.icon-title-email {
+
+display: none;
+
+color: #fff;
+
+font-size: 16px;
+
+}
+
+.icon-title-whatsapp {
+
+display: none;
+
+color: #fff;
+
+font-size: 16px;
+
+}
+
+
+
+.whatsapp:hover {
+
+color: #fff;
+
+background-color: rgba(65 195 82);
+
+box-shadow: 0 4px 8px rgba(65 195 82);
+
+}
+
+.email:hover {
+
+color: #fff;
+
+background-color: rgba(103 58 183);
+
+box-shadow: 0 4px 8px rgba(103 58 183);
+
+}
+
+
+
+.whatsapp:hover .icon-title-whatsapp {
+
+display: inline;
+
+}
+
+.email:hover .icon-title-email {
+
+display: inline;
+
+}
   </style>
 
   <!-- =======================================================
@@ -316,7 +459,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Societé</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#about"><span>Societé</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link scrollto" href="#about">Qui sommes-nous</a></li>
               <li><a class="nav-link scrollto" href="#marques">Nos Partenaires</a></li>
@@ -326,7 +469,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto " href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Nos Projets</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Projets</a></li>
           <li><a class="nav-link scrollto" href="#certif">Certifications</a></li>
           <!--<li><a class="nav-link scrollto" href="#news">Blog</a></li>-->
 		      <li><a class="nav-link scrollto" href="#contact">Contacts</a></li>
@@ -342,7 +485,7 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <h1>Leader en technologies d'information</h1>
       <h2>Votre partenaire pour la croissance de votre entreprise.</h2>
-      <a href="#services" class="btn-get-started scrollto">Nos Services</a>
+      <a href="#services" class="btn-get-started scrollto">Services</a>
     </div>
   </section><!-- End Hero -->
 
@@ -472,7 +615,7 @@
 
         <div class="section-title">
           <span>Services</span>
-          <h2>Nos Services</h2>
+          <h2>Services</h2>
           <p>Nos services et produits couvre tous vos besoins technologique pour bouster votre productivité, tels que les laptops, les postes de travails, l’infrastructure réseau & wifi & serveur, le stockage, la sauvegarde des données, l’impression et la vidéo surveillance, plus que les outils de collaboration.</p>
         </div>
 
@@ -480,7 +623,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid img-head" alt="...">
-              <h4>Infrastructure & Salle Serveur</h4>
+              <h4>Infrastructure & Serveurs</h4>
               <p>Nous vous accompagnerons dans vos projets de mise en place de l'infrastructure réseau, serveurs et les baies de stockage.</p>
             </div>
           </div>
@@ -496,7 +639,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid img-head" alt="...">
-              <h4>Périphériques et consommables</h4>
+              <h4>Périphériques</h4>
               <p>Vous auriez un large choix qui répondrent à l’ensemble de vos besoins, Claviers/Souris, Imprimantes, Casques, Webcam, Vidéo projecteurs.</p>
             </div>
           </div>
@@ -509,7 +652,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <img src="assets/img/portfolio/poly.jpg" class="img-fluid img-head" alt="...">
-              <h4>Visio Conference</h4>
+              <h4>Visio Conférence</h4>
               <p>PC Plus est le partenaire idéal pour déployer des solutions sur mesure, alliant performance, sécurité et simplicité : Poly, Teams, Zoom, Logitech,..</p>
             </div>
           </div>
@@ -639,7 +782,7 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Valeurs</span>
+          <span>Nos Valeurs</span>
           <h2>Nos valeurs</h2>
           
         </div>
@@ -751,7 +894,7 @@
 
         <div class="section-title">
           <span>Projets</span>
-          <h2>Nos Projets</h2>
+          <h2>Projets</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -1120,6 +1263,35 @@
 
   </main><!-- End #main -->
 
+<!-- Whatssapp and Email -->
+
+<div class="fixed-icons">
+
+  <div class="icon-container">
+
+    <a href="https://wa.me/yourwhatsappnumber" class="icon whatsapp">
+
+      <i class="bi bi-whatsapp"></i>
+
+      <div class="icon-title-whatsapp">05 15 02 10 12</div>
+
+    </a>
+
+  </div>
+
+  <div class="icon-container">
+
+    <a href="mailto:youremail@example.com" class="icon email">
+
+      <i class="bi bi-envelope"></i>
+
+      <div class="icon-title-email">05 15 02 10 12</div>
+
+    </a>
+
+  </div>
+
+</div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -1130,14 +1302,14 @@
 
           <div class="col-lg-4 col-md-6 footer-links">
             <!--<div class="footer-info">-->
-              <h4>Agence</h4>
+              <h4>Agences</h4>
               <ul>
-                <li><i class="bx bx-map"></i> <a href="#contact"><strong>Tanger: </strong>  Rce, Palace 8, Rue Al Farabi Entresol N° 6 B</a></li>
-                <li><i class="bx bx-phone-call"></i> <a href="#contact"><strong>Phone: </strong> (+212) 05 35 65 16 22</a></li>
+                <li><i class="bx bx-map"></i> <a href="#contact"><strong>Tanger : </strong>  Rce, Palace 8, Rue Al Farabi Entresol N° 6 B</a></li>
+                <li><i class="bx bx-phone-call"></i> <a href="#contact"><strong>Phone : </strong> (+212) 05 35 65 16 22</a></li>
               </ul><hr>
               <ul>
-                <li><i class="bx bx-map"></i> <a href="#contact"><strong>Fès: </strong>  3, Rue Abi hayane Taouhidi Av. des F.A.R (V.N)</a></li>
-                <li><i class="bx bx-phone-call"></i> <a href="#contact"><strong>Phone: </strong> (+212) 05 39 32 39 12</a></li>
+                <li><i class="bx bx-map"></i> <a href="#contact"><strong>Fès : </strong>  3, Rue Abi hayane Taouhidi Av. des F.A.R (V.N)</a></li>
+                <li><i class="bx bx-phone-call"></i> <a href="#contact"><strong>Phone : </strong> (+212) 05 39 32 39 12</a></li>
               </ul>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -1153,23 +1325,22 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Menu</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Accueil</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">Qui sommes-nous</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#marques">Marques</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#certif">Certifications</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Nos Projets</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#marques">Nos Partenaires</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#clients">Nos Clients</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Projets</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#certif">Certifications</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Nos Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Infrastructure & Salle Serveur</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Infrastructure & Serveurs</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Postes de travail et laptops</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Périphériques et consommables</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Visio Conference</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Périphériques</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Visio Conférence</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Imprimantes et Consommables</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Licences et Logiciels</a></li>
             </ul>
@@ -1196,7 +1367,7 @@
 									<span>08:00 - 17:00</span>
 								</div>
 								<div class="witr_sub_table">		
-									<span>Vendredi:</span>
+									<span>Vendredi</span>
 									<span>08:00 - 17:00</span>
 								</div>
 								<div class="witr_sub_table">		
@@ -1351,3 +1522,9 @@ $(document).ready(function() {
 </body>
 
 </html>
+
+
+
+
+
+
