@@ -39,6 +39,171 @@
   </script>
  
   <style>
+ /*Whatssap icon
+ .fixed-icons {
+  position: fixed;
+  bottom: 120px;
+  right: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: #ed5b5b;
+}
+ 
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+ 
+.icon {
+  border: 2px solid #0a3574;
+  border-right: 0px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  transition: all .4s;
+  padding: 5px;
+  /*background-color: rgba(101, 101, 101, 0.1);*
+  border-radius: 50px;
+  transition: background-color 0.4s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+.whatsapp{
+  color: rgba(65 195 82);
+}
+ 
+.email{
+  color: rgba(103 58 183);
+}
+ 
+.icon i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+ 
+.icon-title-email {
+  display: none;
+  color: #fff;
+  font-size: 16px;
+}
+.icon-title-whatsapp {
+  display: none;
+  color: #fff;
+  font-size: 16px;
+}
+ 
+.whatsapp:hover {
+  color: #fff;
+  background-color: rgba(65 195 82);
+  box-shadow: 0 4px 8px rgba(65 195 82);
+}
+.email:hover {
+  color: #fff;
+  background-color: rgba(103 58 183);
+  box-shadow: 0 4px 8px rgba(103 58 183);
+}
+ 
+.whatsapp:hover .icon-title-whatsapp {
+  display: inline;
+}
+.email:hover .icon-title-email {
+  display: inline;
+}*/
+
+/* Whatssap&tel*/
+.call-action-content.active {
+    visibility: visible;
+    opacity: 1;
+}
+.call-action-content {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: -5px;
+    bottom: 120px;
+    z-index: 99999;
+    background: #eb5d1e;
+    width: auto;
+    height: 40px;
+    border-radius: 4px;
+    transition: all .4s;
+    color: #fff;
+    right: -20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #0a3574;
+    background: #fff;
+    color: #0a3574;
+    padding: 15px;
+}
+.call-action-content:hover {
+  background: #0a3574;
+  border-color: #0a3574;
+  color: #fff;
+}
+.call-action-content i {
+  font-size: 24px;
+  color: #0a3574;
+  line-height: 0
+}
+.icon-title-call {
+  display: none;
+  padding-right: 10px;
+  /*color: #fff;
+  font-size: 16px;*/
+}
+ 
+ .call-action-content:hover .icon-title-call {
+   display: inline;
+ }
+.whatsapp-action.active {
+    visibility: visible;
+    border: 2px solid #23a612;
+    opacity: 1;
+}
+.whatsapp-action {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: -5px;
+    bottom: 70px;
+    z-index: 99999;
+    background: #23a612;
+    width: auto;
+    height: 40px;
+    border-radius: 4px;
+    transition: all .4s;
+    color: #fff;
+    right: -20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+}
+.whatsapp-action i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0
+}
+
+.whatsapp-action:hover {
+  background: #fff;
+  color: #23a612;
+  border: 2px solid #23a612;
+}
+.icon-title-whatsapp {
+  display: none;
+  padding-right: 10px;
+  /*color: #fff;
+  font-size: 16px;*/
+}
+ 
+ .whatsapp-action:hover .icon-title-whatsapp {
+   display: inline;
+ }
 /*Clients*/
 
 .slick-prev, .slick-next {
@@ -1059,6 +1224,36 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+  <!-- Whatssapp and Email 
+  <div class="fixed-icons">
+    <div class="icon-container">
+      <a href="https://wa.me/yourwhatsappnumber" class="icon whatsapp">
+        <i class="bi bi-whatsapp"></i>
+        <div class="icon-title-whatsapp">05 15 02 10 12</div>
+      </a>
+    </div>
+    <div class="icon-container">
+      <a href="mailto:youremail@example.com" class="icon email">
+        <i class="bi bi-envelope"></i>
+        <div class="icon-title-email">05 15 02 10 12</div>
+      </a>
+    </div>
+  </div>-->
+
+  <a href="tel:06 98 87 13 43" class="call-action-content d-flex align-items-center justify-content-center active">
+		<span class="bi bi-telephone" style="padding-right: 10px;font-size: 20px;"></span><div class="icon-title-call">06 98 87 13 43</div>
+	</a>
+
+  <a href="https://wa.me/33698871343" class="whatsapp-action d-flex align-items-center justify-content-center active">
+    <span style="padding-right: 10px; font-size: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 38 40">
+            <path fill="#00E676" d="M10.7 32.8l.6.3c2.5 1.5 5.3 2.2 8.1 2.2 8.8 0 16-7.2 16-16 0-4.2-1.7-8.3-4.7-11.3s-7-4.7-11.3-4.7c-8.8 0-16 7.2-15.9 16.1 0 3 .9 5.9 2.4 8.4l.4.6-1.6 5.9 6-1.5z"></path>
+            <path fill="#FFF" d="M32.4 6.4C29 2.9 24.3 1 19.5 1 9.3 1 1.1 9.3 1.2 19.4c0 3.2.9 6.3 2.4 9.1L1 38l9.7-2.5c2.7 1.5 5.7 2.2 8.7 2.2 10.1 0 18.3-8.3 18.3-18.4 0-4.9-1.9-9.5-5.3-12.9zM19.5 34.6c-2.7 0-5.4-.7-7.7-2.1l-.6-.3-5.8 1.5L6.9 28l-.4-.6c-4.4-7.1-2.3-16.5 4.9-20.9s16.5-2.3 20.9 4.9 2.3 16.5-4.9 20.9c-2.3 1.5-5.1 2.3-7.9 2.3zm8.8-11.1l-1.1-.5s-1.6-.7-2.6-1.2c-.1 0-.2-.1-.3-.1-.3 0-.5.1-.7.2 0 0-.1.1-1.5 1.7-.1.2-.3.3-.5.3h-.1c-.1 0-.3-.1-.4-.2l-.5-.2c-1.1-.5-2.1-1.1-2.9-1.9-.2-.2-.5-.4-.7-.6-.7-.7-1.4-1.5-1.9-2.4l-.1-.2c-.1-.1-.1-.2-.2-.4 0-.2 0-.4.1-.5 0 0 .4-.5.7-.8.2-.2.3-.5.5-.7.2-.3.3-.7.2-1-.1-.5-1.3-3.2-1.6-3.8-.2-.3-.4-.4-.7-.5h-1.1c-.2 0-.4.1-.6.1l-.1.1c-.2.1-.4.3-.6.4-.2.2-.3.4-.5.6-.7.9-1.1 2-1.1 3.1 0 .8.2 1.6.5 2.3l.1.3c.9 1.9 2.1 3.6 3.7 5.1l.4.4c.3.3.6.5.8.8 2.1 1.8 4.5 3.1 7.2 3.8.3.1.7.1 1 .2h1c.5 0 1.1-.2 1.5-.4.3-.2.5-.2.7-.4l.2-.2c.2-.2.4-.3.6-.5s.4-.4.5-.6c.2-.4.3-.9.4-1.4v-.7s-.1-.1-.3-.2z"></path>
+        </svg>
+    </span>
+    <div class="icon-title-whatsapp">06 98 87 13 43</div>
+</a>
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
