@@ -803,7 +803,7 @@ section {
 --------------------------------------------------------------*/
 .marques {
   background: #222222;
-  padding: 15px 0;
+  padding: 40px 0;
   text-align: center;
 }
 .marques h2{
@@ -1087,6 +1087,7 @@ section {
 
 .cta .cta-btn {
   font-family: "Raleway", sans-serif;
+  width: 276px;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
